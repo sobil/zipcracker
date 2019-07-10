@@ -1,0 +1,40 @@
+{
+  "name": "sp-zip-cracker",
+  "version": "0.0.1",
+  "description": "Cracks zip files from wordlist",
+  "main": "./lib/index.js",
+  "bin": {
+    "sp-zip-cracker": "./lib/index.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -p ./ && npm install -g",
+    "watch": "npm t -- --watch",
+    "start": "tsc -p ./ && npm install -g && sp-zip-cracker -f /Users/simonpilepich/git/cracker-ng/bin/abz.zip -w ../cracker-ng/bin/l2.txt"
+  },
+  "author": "Simon Pilepich",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.6.1",
+    "@types/unzipper": "^0.9.2",
+    "@types/commander": "^2.9.1",
+    "eslint": "^6.0.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "@types/event-stream": "^3.3.34",
+    "commander": "^2.20.0",
+    "event-stream": "^4.0.1",
+    "minizip-asm.js": "^1.0.10"
+  }
+}
