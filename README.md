@@ -3,7 +3,7 @@ Simple node based zip cracker using [minizip](https://github.com/rf00/minizip-as
 
 Includes a basic wordlist from [SecLists](https://github.com/danielmiessler/SecLists)
 
-##Install
+## Install
 
 ```
 git clone git@github.com:sobil/zipcracker.git
@@ -11,13 +11,13 @@ cd zipcracker
 npm install -g
 ```
 
-##Usage
+## Usage
 
 ```
 zipcracker -f ./zipfile_to_crack.zip -w ./wordlist.txt
 ```
 
 
-##Issues/TODO
+## Issues/TODO
 
 Only runs on single core - add worker_threads
