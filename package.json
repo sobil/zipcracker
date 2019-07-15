@@ -1,16 +1,16 @@
 {
-  "name": "sp-zip-cracker",
+  "name": "zipcracker",
   "version": "0.0.1",
   "description": "Cracks zip files from wordlist",
   "main": "./lib/index.js",
   "bin": {
-    "sp-zip-cracker": "./lib/index.js"
+    "zipcracker": "./lib/index.js"
   },
   "scripts": {
     "test": "jest",
     "build": "tsc -p ./ && npm install -g",
     "watch": "npm t -- --watch",
-    "start": "tsc -p ./ && npm install -g && sp-zip-cracker -f /Users/simonpilepich/git/cracker-ng/bin/abz.zip -w ../cracker-ng/bin/l2.txt"
+    "setup": "tsc -p ./ && npm install -g"
   },
   "author": "Simon Pilepich",
   "license": "ISC",
@@ -36,5 +36,6 @@
     "commander": "^2.20.0",
     "event-stream": "^4.0.1",
     "minizip-asm.js": "^1.0.10"
-  }
+  },
+  "repository": "https://github.com/sobil/zipcracker"
 }
